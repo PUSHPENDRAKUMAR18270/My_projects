@@ -58,7 +58,7 @@ void input()
 	cin>>inp;
 	cout<<endl;
 	//if(_khbit())
-	{
+	
 	  switch(inp)//_getch()
 	   {
 		case 'a':
@@ -78,17 +78,17 @@ void input()
 			 //gameover=true;
 			 break;
 		}
-	}
+	
 }
 void logic()
 {
    switch(dir)
    {
    	 case UP:
-   	  x++;
+   	  y--;
    	  break;
    	  case DOWN:
-   	  x--;
+   	  y++;
    	  break;
    	  case RIGHT:
    	  x++;
@@ -122,6 +122,6 @@ int main()
       input();
       logic();
    //system('clear');
-   //clrscr();
+   clrscr;
   }
 }
